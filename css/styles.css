@@ -81,6 +81,92 @@ input[type=checkbox]{
     width: unset;
 }
 
-input[type=radio]{
-    display:flow-root;
+/* input[type=radio]{
+    display:flex;
+} */
+
+
+.radio{
+    display: flex;
+    flex-direction: column;
 }
+
+fieldset h3{
+    padding: 0 0.75rem;
+}
+
+.radio > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group1 > div {
+    display: flex;
+}
+
+.radio-group2 > div {
+    display: flex;
+}
+
+
+input[type=submit]{
+    background-color: var(--lg-blue);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: auto;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    background-color: whitesmoke;
+}
+
+
+@media screen and (min-width: 1000px) {
+    fieldset{
+        width: 650px;
+    }
+    section{
+        display: flex;
+    }
+    h2,
+    p {
+        padding: 0 2rem 0 0;
+    }
+    .radio > div {
+        display: flex;
+        flex-direction: row;
+    }
+    .radio-group1{
+        gap:300px;
+        
+    }
+    .radio-group2{
+        gap: 278px;
+        
+    }
+    fieldset label{
+        display: block;
+    }
+    .radio-group1 label{
+        display: flex;
+    } 
+}
+@media screen and (min-width: 1440px) {
+    section{
+        width: 1400px;
+        padding: 1rem;
+        margin: auto;
+    }
+    h2,
+    p {
+        padding: 0 5rem 0 0;
+        font-family: auto;
+    }
+}
+
+
